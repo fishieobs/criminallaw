@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Folder Background with Tab -->
+  <path d="M40 100C40 77.9086 57.9086 60 80 60H180L220 100H432C454.091 100 472 117.909 472 140V412C472 434.091 454.091 452 432 452H80C57.9086 452 40 434.091 40 412V100Z" fill="#FDE68A" stroke="#B45309" stroke-width="12"/>
+  
+  <!-- Folder Shadow/Detail Line -->
+  <path d="M40 140H472" stroke="#B45309" stroke-width="8"/>
+  
+  <!-- Case Text Labels (Chinese) -->
+  <text x="80" y="190" font-family="Noto Sans TC, sans-serif" font-weight="900" font-size="28" fill="#78350F">案號：113年度偵字第123號</text>
+  <rect x="80" y="205" width="352" height="4" fill="#D97706" opacity="0.3"/>
+  
+  <text x="80" y="260" font-family="Noto Sans TC, sans-serif" font-weight="900" font-size="28" fill="#78350F">被告：陳○明</text>
+  <rect x="80" y="275" width="352" height="4" fill="#D97706" opacity="0.3"/>
+  
+  <text x="80" y="330" font-family="Noto Sans TC, sans-serif" font-weight="900" font-size="28" fill="#78350F">案由：加重詐欺罪</text>
+  <rect x="80" y="345" width="352" height="4" fill="#D97706" opacity="0.3"/>
+  
+  <!-- Legal Scale Icon overlay (simplified) -->
+  <path d="M380 340V400M350 360L380 340L410 360M350 400L380 380L410 400" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
+</svg>
