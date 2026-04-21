@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+@theme {
+  --font-sans: 'Inter', 'Noto Sans TC', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center px-6 py-3 text-sm transition-colors duration-200 border-r-4 border-transparent;
+  }
+  
+  .sidebar-link-active {
+    @apply bg-slate-800 text-white font-medium border-blue-500;
+  }
+
+  .testimony-card {
+    @apply transition-all duration-200 bg-white p-4 rounded-xl shadow-sm border border-slate-200;
+  }
+  
+  .testimony-card:hover {
+    @apply -translate-y-0.5 shadow-md;
+  }
+
+  .grid-scroll {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  
+  .grid-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .grid-scroll::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+  }
+}
