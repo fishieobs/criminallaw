@@ -1,6 +1,20 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+// Safe way to access environment variables in both AI Studio and standard Vite (Vercel) environments
+const getApiKey = () => {
+  // Try AI Studio environment first
+  try {
+    if (typeof process !== 'undefined' && process.env?.GEMINI_API_KEY) {
+      return process.env.GEMINI_API_KEY;
+    }
+  } catch (e) {}
+  
+  // Fallback to standard Vite environment variables (will require VITE_ prefix in Vercel)
+  // @ts-ignore
+  return import.meta.env?.VITE_GEMINI_API_KEY || "";
+};
+
+const ai = new GoogleGenAI({ apiKey: getApiKey() });
 
 export async function analyzeIndictment(text: string) {
   const prompt = `你是一位專業的刑事律師。請分析以下起訴書內容，提取「犯罪事實」與「適用法條」。
