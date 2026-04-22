@@ -148,7 +148,7 @@ export default function App() {
         <div className="p-6 border-b border-slate-700">
           <h1 className="text-xl font-bold text-white flex items-center gap-2">
             <Scale className="text-blue-400 w-6 h-6" />
-            法鼎律政系統
+            禹河法律刑事案件系統
           </h1>
           <p className="text-[10px] mt-1 opacity-50 font-mono tracking-widest uppercase">Intelligent Case Analysis</p>
         </div>

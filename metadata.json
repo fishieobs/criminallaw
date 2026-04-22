@@ -1,5 +1,5 @@
 {
-  "name": "刑事案件智慧詰問系統",
+  "name": "禹河法律刑事案件系統",
   "description": "協助律師整理起訴書事實、法律要件、證人供述證據，並生成交互詰問題目。",
   "requestFramePermissions": [],
   "majorCapabilities": []
